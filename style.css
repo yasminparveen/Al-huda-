@@ -215,10 +215,10 @@ footer {
         position: fixed;
         width: 100%;
         height: 100vh;
-        background: #2c3e50;
+        background: #010b16;
         top: 80px;
-        left: -100%;
-        text-align: center;
+        /* left: -100%; */
+        /* text-align: center; */
         transition: all 0.5s;
     }
 
@@ -451,4 +451,123 @@ th {
      Adjust this value based on the height of your expanded menu 
 } */
 /* Styles for mobile view */
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    /* Hide the hamburger menu by default */
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin-bottom: 5px;
+    background-color: #333;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Show the hamburger menu on small screens */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+    .slider{
+        display: none;
+    }
+   
+
+    .navigation {
+        display: none;
+        /* Hide the navigation menu by default */
+        position: absolute;
+        top: 80px;
+        /* Adjust this value based on your nav height */
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .navigation.show {
+        display: block;
+        /* Show the navigation menu when the hamburger menu is clicked */
+    }
+
+    .navigation ul {
+        flex-direction: column;
+        margin-right: 0;
+    }
+
+    .navigation ul li {
+        margin-left: 0;
+    }
+
+    .navigation ul li a {
+        display: block;
+        padding: 10px 20px;
+    }
+}
+.img-cont1 {
+    width: 100%;
+    max-width: 600px;
+    /* Adjust the maximum width as needed */
+    margin: 0 auto;
+    /* Center the container horizontally */
+    overflow: hidden;
+    /* Hide any part of the image that exceeds the container */
+}
+
+.school-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    /* Remove default inline spacing */
+}
+.section-heading {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.section-description {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.verse-container {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.verse {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.translation {
+    font-size: 16px;
+    font-style: italic;
+    text-align: center;
+}
+
+.bank-details-heading {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.bank-details {
+    text-align: center;
+}
+
+.bank-details p {
+    margin: 5px 0;
+}
 
