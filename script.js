@@ -32,26 +32,11 @@ index = (index + 1) % images.length ;
 }
 
 setInterval(updateImage,2000);
-// Add this JavaScript code to your script.js file
 
-const navLinks = document.querySelectorAll('nav .navigation ul li a');
 
-navLinks.forEach(link => {
-  link.addEventListener('click', () => {
-    const checkBox = document.getElementById('check');
-    checkBox.checked = false;
-  });
-});
-const navbarToggle = document.querySelector('.navbar-toggle');
+const hamburger = document.querySelector('.hamburger');
 const navigation = document.querySelector('.navigation');
 
-navbarToggle.addEventListener('click', () => {
-    navbarToggle.classList.toggle('active');
-    navigation.classList.toggle('active');
-});
-const navbarToggler = document.querySelector('.navbar-toggler');
-const body1= document.querySelector('body1');
-
-navbarToggler.addEventListener('click', () => {
-    body1.classList.toggle('menu-open');
+hamburger.addEventListener('click', () => {
+  navigation.classList.toggle('show');
 });
